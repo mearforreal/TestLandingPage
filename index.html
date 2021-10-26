@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Pool</title>
+  </head>
+  <body class="main__conainer">
+    <!-- Banner -->
+    <div class="banner__wrapper">
+      <nav>
+        <ul class="header__conatiner">
+          <li><p id="home">Главная</p></li>
+          <li><p id="tovary">Товары</p></li>
+          <li><p id="contact">Контакты</p></li>
+          <li><img src="./assets/logo.svg" alt="logo" /></li>
+
+          <li><p>+7 727 368 83 560</p></li>
+          <li><p>+7 771 964 36 50</p></li>
+          <img src="./assets/nav_wave.svg" alt="" class="nav_wave_link" />
+        </ul>
+      </nav>
+
+      <div class="banner__container">
+        <div class="banner_inner">
+          <p class="title">Строительство бассейнов</p>
+          <p class="description">
+            <b> Полный спект работ:</b> от проектирования и сдачи “под ключ” до
+            обслуживания или реконструкции вашего бассейна, а также большой
+            выбор товаров
+          </p>
+          <div class="btn_wrapper">
+            <button>Оставить заявку</button>
+          </div>
+        </div>
+      </div>
+      <div style="z-index: 1">
+        <img
+          src="./assets/blue_banner_wave.svg"
+          alt="blue_banner_wave"
+          class="blue_banner_wave"
+        />
+        <img
+          src="./assets/white_baner_wave.svg"
+          alt="white_baner_wave"
+          class="white_banner_wave"
+        />
+      </div>
+    </div>
+
+    <!-- Our Work -->
+    <div class="our_work_section">
+      <div class="title">
+        <p>наши работы</p>
+        <div class="nav_wave">
+          <img src="./assets/nav_wave.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="our_work_images">
+        <img src="./assets/pool1.svg" alt="" id="small_left_image" />
+        <img src="./assets/pool2.svg" alt="" id="big_middle_image" />
+        <img src="./assets/pool3.svg" alt="" id="small_right_image" />
+      </div>
+
+      <div class="our_work_arrows">
+        <div class="arrow_circle left_circle" id="left_circle">
+          <i class="arrow left"></i>
+        </div>
+        <div class="arrow_circle right_circle" id="right_circle">
+          <i class="arrow right"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Price -->
+
+    <div class="price_section">
+      <div class="waves">
+        <img
+          src="./assets/work_wave_white_above.svg"
+          class="work_wave_white_above"
+          alt="work_wave_white_above"
+        />
+        <img
+          src="./assets/work_blue_wave.svg"
+          class="work_blue_wave"
+          alt="work_blue_wave"
+        />
+        <img
+          src="./assets/work_wave_white_bottom.svg"
+          class="work_wave_white_bottom"
+          alt="work_wave_white_bottom"
+        />
+      </div>
+      <!-- title -->
+      <div class="title">
+        <p>сколько будет стоить бассейн?</p>
+        <div class="nav_wave">
+          <img src="./assets/nav_wave.svg" alt="" />
+        </div>
+      </div>
+
+      <!-- description -->
+
+      <p class="description">
+        Ответьте на несколько вопросов и наши специалисты отправят вам смету
+        <b>в течении 1 рабочего дня</b>
+      </p>
+      <div class="price_content">
+        <!-- form -->
+        <div class="form_wrapper">
+          <form action="/request">
+            <div class="form__control">
+              <label for="otdelka">Отделка чаши:</label>
+              <select id="otdelka" class="from_elem">
+                <option value="1">Полипропилен</option>
+              </select>
+            </div>
+            <div class="form__control">
+              <label for="heat_water">Нагрев воды:</label>
+              <select id="heat_water" class="from_elem">
+                <option value="0">Нет</option>
+                <option value="1">Да</option>
+              </select>
+            </div>
+            <div class="form__control">
+              <label for="size_pool">Размер бассейна:</label>
+              <div class="size_range_container">
+                <input type="range" name="size_pool" id="size_pool" />
+                <p id="size_pool_text">7х3 м.</p>
+              </div>
+            </div>
+
+            <div class="btn_wrapper">
+              <button>Оставить заявку</button>
+            </div>
+          </form>
+        </div>
+        <!-- image -->
+        <img src="./assets/price_pool.png" alt="price_pool" />
+      </div>
+    </div>
+    <!-- End price -->
+
+    <!-- Tovary -->
+    <div id="products_section" class="products_section">
+      <div class="title">
+        <p>Товары для бассейна</p>
+        <div class="nav_wave">
+          <img src="./assets/nav_wave.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="product_nav_wrapper">
+        <ul class="product_nav">
+          <li class="selected"><span>Все</span></li>
+          <li><span>Насосы</span></li>
+          <li><span>Нагреватели</span></li>
+        </ul>
+
+        <div class="image_slider">
+          <div class="slider_arrow">
+            <div class="arrow_circle left_circle" id="left_circleProduct">
+              <i class="arrow left"></i>
+            </div>
+          </div>
+
+          <div class="card_wrapper">
+            <div class="card">
+              <div class="card_image">
+                <img src="./assets/product1.svg" alt="product1" />
+              </div>
+              <div class="card_text">
+                <p>Фильтровальная установка Bestway</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card_image">
+                <img src="./assets/product2.svg" alt="product2" />
+              </div>
+              <div class="card_text">
+                <p>Прожектор под плитку с оправой из ABS-пластика</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card_image">
+                <img src="./assets/product1.svg" alt="product1" />
+              </div>
+              <div class="card_text">
+                <p>Фильтровальная установка Bestway</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card_image">
+                <img src="./assets/product2.svg" alt="product2" />
+              </div>
+              <div class="card_text">
+                <p>Прожектор под плитку с оправой из ABS-пластика</p>
+              </div>
+            </div>
+          </div>
+          <div class="slider_arrow">
+            <div class="arrow_circle right_circle" id="right_circleProduct">
+              <i class="arrow right"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="product_btn_wrapper">
+          <button class="product_btn">Оставить заявку</button>
+        </div>
+      </div>
+    </div>
+    <!-- end tovary -->
+    <!-- chto vy poluchaete  -->
+    <div class="services_section">
+      <div class="title color-white">
+        <p>что вы получаете?</p>
+        <div class="nav_wave">
+          <img src="./assets/white_small_wave.svg" alt="" />
+        </div>
+      </div>
+      <div class="services_wrapper">
+        <div class="service_container">
+          <div class="serivce">
+            <img src="./assets/research.svg" alt="research" />
+            <p>Индивидуальное предложение</p>
+          </div>
+          <div class="serivce">
+            <img src="./assets/time.png" alt="research" />
+            <p>Индивидуальное предложение</p>
+          </div>
+          <div class="serivce">
+            <img src="./assets/hand.svg" alt="research" />
+            <p>Индивидуальное предложение</p>
+          </div>
+        </div>
+      </div>
+      <!-- waves -->
+      <img
+        src="./assets/service_blue_wave_bottom.svg"
+        alt="service_blue_wave_bottom"
+        class="service_blue_wave_bottom"
+      />
+      <img
+        src="./assets/service_blue_wave_top.svg"
+        alt="service_blue_wave_top"
+        class="service_blue_wave_top"
+      />
+      <img
+        src="./assets/service_grey_wave_top.svg"
+        alt="service_grey_wave_top"
+        class="service_grey_wave_top"
+      />
+    </div>
+
+    <!-- request -->
+    <div class="request_section">
+      <!-- title -->
+      <div class="title">
+        <p>остались вопросы?</p>
+        <div class="nav_wave">
+          <img src="./assets/nav_wave.svg" alt="" />
+        </div>
+      </div>
+
+      <!-- description -->
+
+      <p class="description">
+        Оставьте заявку и наши специалисты свяжутся с вами в ближайшее время
+      </p>
+
+      <div class="request_form_wrapper">
+        <form action="">
+          <input type="text" id="name" name="name" placeholder="Имя" />
+
+          <input
+            type="tel"
+            id="telephone"
+            name="telephone"
+            placeholder="Телефон"
+          />
+          <div class="btn_wrapper">
+            <button type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer id="contact_footer">
+      <div class="footer_wrapper">
+        <div class="contact_wrapper">
+          <div class="contact_container">
+            <p class="footer__header">КОНТАКТЫ</p>
+            <div class="contact_info">
+              <div class="info_row">
+                <img src="./assets/map_poniter.svg" alt="map_poniter" />
+                <p>Казахстан, Алматы, Байзакова, 263, 1 этаж, 5 офис</p>
+              </div>
+              <div class="info_row">
+                <img src="./assets/telephone.svg" alt="telephone" />
+                <p><b>+7 727 368 83 56, +7 771 964 36 50</b></p>
+              </div>
+              <div class="info_row email">
+                <span>@</span>
+                <p>imfo@pool.kz</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

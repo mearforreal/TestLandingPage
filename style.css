@@ -1,0 +1,653 @@
+* {
+  margin: 0;
+}
+body {
+  overflow-x: hidden;
+}
+@font-face {
+  font-family: "Gilroy Medium";
+  src: url("./assets/fonts/Gilroy-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy Bold";
+  src: url("./assets/fonts/Gilroy-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy SemiBold";
+
+  src: url("./assets/fonts/Gilroy-SemiBold.ttf");
+}
+
+.main__conainer {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.banner__wrapper {
+  background: url("./assets/background.svg") no-repeat;
+  background-size: cover;
+  height: 945px;
+  position: relative;
+}
+
+.header__conatiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Gilroy SemiBold";
+  padding-top: 20px;
+  margin-bottom: 35px;
+}
+.header__conatiner logo {
+  margin: 0 80px;
+}
+.header__conatiner li p {
+  cursor: pointer;
+  margin-right: 40px;
+  font-size: 18px;
+
+  color: rgb(22, 57, 80);
+  font-weight: bold;
+  line-height: 2.778;
+}
+
+.nav_wave_link {
+  position: absolute;
+  margin: 0;
+  left: 29.5%;
+  top: 85px;
+}
+
+.header__conatiner li {
+  list-style: none;
+}
+
+.banner__container {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.btn_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.btn_wrapper button {
+  z-index: 3;
+  border: none;
+  border-radius: 16px 16px 22px 22px;
+  height: 50px;
+  background: -moz-linear-gradient(
+    90deg,
+    rgb(237, 97, 20) 0%,
+    rgb(249, 225, 155) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgb(237, 97, 20) 0%,
+    rgb(249, 225, 155) 100%
+  );
+  background: -ms-linear-gradient(
+    90deg,
+    rgb(237, 97, 20) 0%,
+    rgb(249, 225, 155) 100%
+  );
+  width: 200px;
+  color: white;
+  font-family: "Gilroy Medium";
+  font-size: 20px;
+}
+
+.btn_wrapper button:hover {
+  background: -moz-linear-gradient(
+    90deg,
+    rgb(10, 105, 150) 0%,
+    rgb(38, 192, 223) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgb(10, 105, 150) 0%,
+    rgb(38, 192, 223) 100%
+  );
+  background: -ms-linear-gradient(
+    90deg,
+    rgb(10, 105, 150) 0%,
+    rgb(38, 192, 223) 100%
+  );
+  width: 200px;
+}
+
+.banner_inner {
+  width: 660px;
+  z-index: 10;
+}
+
+.banner_inner .title {
+  font-size: 33px;
+  font-family: "Gilroy Bold";
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+.banner_inner .description {
+  font-size: 19px;
+  font-family: "Gilroy Medium";
+  margin-bottom: 25px;
+}
+
+.blue_banner_wave {
+  position: absolute;
+
+  width: 100%;
+  bottom: -195px;
+}
+.white_banner_wave {
+  position: absolute;
+
+  width: 101%;
+  bottom: -180px;
+}
+
+/* Our work */
+
+.our_work_section {
+  z-index: 10;
+  position: relative;
+}
+
+.title p {
+  text-align: center;
+  font-size: 35px;
+  font-family: "Gilroy Bold";
+  text-transform: uppercase;
+  line-height: 1.429;
+  color: #163950;
+  margin-bottom: 25px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.our_work_images {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+  gap: 30px;
+}
+.our_work_arrows {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+  gap: 20px;
+}
+
+.arrow_circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.left_circle {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #afafaf;
+}
+
+.right_circle {
+  border: solid 1px #27c1de;
+  background-color: #27c1de;
+}
+
+.arrow {
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  border: solid #fff;
+  border-width: 0 1px 1px 0;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  border: solid #afafaf;
+  border-width: 0 1px 1px 0;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.price_section {
+  margin-top: 180px;
+  margin-bottom: 200px;
+  background-color: #f2f2f2;
+
+  position: relative;
+}
+
+.price_section .title {
+  padding-top: 24px;
+}
+
+.price_content {
+  margin-top: 74px;
+  padding-left: 175px;
+}
+.price_content img {
+  width: 750px;
+  transform: translateX(-40px);
+}
+
+.description {
+  font-size: 20px;
+  font-family: "Gilroy Medium";
+  color: rgb(22, 57, 80);
+  line-height: 1.25;
+  text-align: center;
+  color: #163950;
+  max-width: 710px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.description p {
+  color: #00497c;
+}
+
+.price_content {
+  display: flex;
+  justify-content: center;
+}
+
+/* .form_wrapper {
+  background-color: #fff;
+  opacity: 0.71;
+  border-radius: 30%;
+
+  width: 580px;
+  height: 348px;
+} */
+
+.form_wrapper {
+  position: relative;
+  width: 580px;
+  height: 348px;
+  margin: 20px 0;
+  background-color: #fff;
+  border-radius: 5% / 50%;
+  /* display: flex;
+  justify-content: center; */
+}
+
+.form_wrapper form {
+  margin: 40px 40px 40px 30px;
+}
+.form__control {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.form__control label {
+  font-size: 18px;
+  font-family: "Gilroy Bold";
+  color: #163950;
+  font-weight: bold;
+  line-height: 1.389;
+  text-align: left;
+  width: 133px;
+}
+.form__control select {
+  padding: 0 20px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-image: url("./assets/drop_dwon_arrow.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 20px);
+  width: 62%;
+}
+.from_elem {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(209, 209, 209);
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.05);
+  height: 40px;
+}
+
+.size_range_container {
+  display: flex;
+  width: 62%;
+}
+
+.size_range_container input {
+  width: 74%;
+}
+
+.size_range_container p {
+  font-family: "Gilroy SemiBold";
+  font-size: 20px;
+  color: #163950;
+  margin-left: 18px;
+}
+
+.price_wrapper {
+  position: relative;
+}
+
+.work_blue_wave {
+  position: absolute;
+  top: -160px;
+  left: 0;
+}
+
+.work_wave_white_above {
+  position: absolute;
+  top: -160px;
+  left: 0;
+  z-index: 4;
+}
+
+.work_wave_white_bottom {
+  position: absolute;
+  bottom: -160px;
+}
+
+.product_nav {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 45px;
+}
+
+.product_nav li span {
+  font-family: "Gilroy Medium";
+  font-size: 20px;
+  color: #163950;
+  text-decoration: underline;
+}
+.product_nav selected {
+  color: #ee6f25;
+  text-decoration: underline;
+}
+
+.image_slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(209, 209, 209);
+  border-radius: 6px;
+  background-color: rgb(255, 255, 255);
+  width: 256px;
+  height: 351px;
+}
+
+.card_text p {
+  font-family: "Gilroy Medium";
+  color: #3d3d3d;
+  font-size: 17px;
+  text-align: center;
+}
+
+.card_wrapper {
+  display: flex;
+  gap: 40px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card img {
+  height: 205px;
+  width: 235px;
+}
+
+.slider_arrow {
+  width: 60px;
+  height: 60px;
+  position: relative;
+}
+
+.slider_arrow .left_circle {
+  position: absolute;
+  right: -50%;
+  background-color: #fff;
+}
+
+.slider_arrow .right_circle {
+  position: absolute;
+  left: -50%;
+}
+
+.product_btn {
+  background-color: #27c1de;
+
+  border: none;
+  border-radius: 16px 16px 22px 22px;
+  height: 50px;
+
+  width: 200px;
+  color: white;
+  font-family: "Gilroy Medium";
+  font-size: 20px;
+}
+
+.product_btn:hover {
+  background-color: #a3d46b;
+}
+.product_btn_wrapper {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Service */
+
+.services_section {
+  margin-top: 167px;
+  background-color: #27c1de;
+  height: 228px;
+}
+
+.services_section .title {
+  padding-top: 10px;
+}
+.color-white p {
+  color: #fff;
+}
+.color-white svg {
+  fill: #fff;
+}
+.services_section {
+  position: relative;
+}
+.services_wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+}
+
+.service_container {
+  display: flex;
+  width: 980px;
+  justify-content: space-between;
+  margin-top: 55px;
+}
+.serivce {
+  display: grid;
+  place-items: center;
+  row-gap: 30px;
+}
+.serivce p {
+  font-size: 23px;
+  font-family: "Gilroy SemiBold";
+  color: #fff;
+  font-weight: bold;
+  line-height: 1.087;
+  text-align: center;
+}
+
+.service_blue_wave_bottom {
+  position: absolute;
+  left: 0;
+  bottom: -160px;
+}
+
+.service_blue_wave_top {
+  position: absolute;
+  left: 0;
+  top: -100px;
+}
+
+.service_grey_wave_top {
+  position: absolute;
+  left: 0;
+  top: -100px;
+}
+
+.request_section {
+  background: url(./assets/request_background.png) no-repeat;
+  background-size: cover;
+  height: 744px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.request_section .title {
+  margin-top: 185px;
+}
+.request_section .title p {
+  margin-bottom: 15px;
+}
+.request_section .description {
+  max-width: 452px;
+  margin-bottom: 45px;
+  margin-top: 12px;
+}
+
+.request_form_wrapper {
+  display: flex;
+  justify-content: center;
+}
+.request_form_wrapper form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 580px;
+  gap: 30px;
+}
+
+.request_form_wrapper input {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(209, 209, 209);
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.05);
+
+  width: 310px;
+  padding: 10px 20px;
+  font-family: "Gilroy Medium";
+  color: #163950;
+  font-size: 18px;
+}
+
+.request_form_wrapper input::placeholder {
+  font-family: "Gilroy Medium";
+  color: #163950;
+  font-size: 18px;
+}
+
+.footer_wrapper {
+  background: url("./assets/map.svg") no-repeat;
+  background-size: cover;
+  height: 390px;
+  display: flex;
+  align-items: center;
+}
+
+.contact_wrapper {
+  margin-left: 370px;
+  border-radius: 6% / 50%;
+  background-color: #fff;
+  height: 300px;
+  width: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact_info {
+  width: 350px;
+}
+
+.info_row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info_row p {
+  font-family: "Gilroy Medium";
+  color: #163950;
+  font-size: 18px;
+}
+
+.email span {
+  font-size: 27px;
+  font-family: "GoudyOldStyleT";
+  color: rgb(191, 191, 191);
+  font-weight: bold;
+  line-height: 0.618;
+  text-align: left;
+}
+.email p {
+  text-decoration: underline;
+}
+
+.contact_container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contact_info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.footer__header {
+  font-size: 25px;
+  font-family: "Gilroy Bold";
+  color: rgb(22, 57, 80);
+
+  line-height: 0.84;
+  text-align: left;
+
+  width: 129px;
+  height: 19px;
+  z-index: 10;
+}
